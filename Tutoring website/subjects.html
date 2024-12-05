@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1.0">
+        
+        <title>Tutoring Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        
+       
+        
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="Tutoring.html"><img src="images/logo.jpg" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="toggleMenu()"></i>
+                    <ul>
+                        <li><a href="Tutoring.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="subjects.html">SUBJECTS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="toggleMenu()"></i>
+            </nav>
+<h1>Subjects</h1>
+        </section>
+        <!-----subjects----->
+        <section class="subjects">
+            <h1>Subjects We Offer</h1>
+            <p>"Unlock your potential with our expert tutoring in Math, Science, and Languages. No matter your level, we're here to help you succeed."</p>
+            <div class="row">
+                <div class="subjects-col">
+                    <h3>Mathematics</h3>
+                    <p>Math doesn’t have to be complicated! Whether you're tackling tricky algebra equations, mastering geometry, or preparing for advanced calculus, our expert tutors break it down into manageable steps</p>
+                </div>
+                <div class="subjects-col">
+                    <h3>Sciences</h3>
+                    <p>From understanding the laws of physics to conducting experiments in chemistry and exploring the wonders of biology, we make science engaging and accessibles</p>
+                </div>
+                <div class="subjects-col">
+                    <h3>Languages</h3>
+                    <p>Build confidence in your communication skills! We offer tutoring in English, Swahili, and more, focusing on grammar, vocabulary, and fluency.</p>
+                </div>
+            </div>
+
+        </section>
+  
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>"At Tutor Trove, we help students achieve their academic goals with personalized tutoring in Math, Sciences, and Languages.<br> Our experienced tutors tailor lessons to each learner's needs, creating an engaging and supportive environment where success becomes attainable."</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Tutor Trove</p>
+        </section>
+
+
+
+        
+        <!----javascript for toggle menu------>
+        <script>
+
+            var navLinks= document.getElementById("navLinks");
+
+            function toggleMenu(){
+                 navLinks.classList.toggle("show");
+            }
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>  
+            
+            
+         
+
+
+
+    </body>
+</html>
